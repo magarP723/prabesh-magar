@@ -55,3 +55,10 @@ input[type="button"]{
 
     }
 }
+@media(max-width:350px){
+    .wrapper{
+        width: 1000%;
+        border-radius: 10px;
+
+    }
+}
