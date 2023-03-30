@@ -55,10 +55,14 @@ input[type="button"]{
 
     }
 }
-@media(max-width:350px){
+@media(max-width:450px) {
     .wrapper{
-        width: 1000%;
-        border-radius: 10px;
-
+        width:100%;
+    }
+    body{
+        min-height: 90vh;
     }
 }
+
+
+
