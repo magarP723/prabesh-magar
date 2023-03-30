@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color:red ;
+}
+h2{
+    text-align: center;
+    /* margin-bottom: 0; */
+}
+hr{
+   width: 90%;  
+}
+.wrapper{
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #02ffff;
+}
+
+li{
+    list-style: none;
+}
+.menu-item,.total{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+
+#count-tea,#count-samosa,.count_vat,.count_tip{
+    background: white;
+    padding-left: 2px;
+    border-radius: 2px;
+}
+
+input[type="button"]{
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+@media(max-width:1024px){
+    .wrapper{
+        width: 70%;
+        border-radius: 10px;
+
+    }
+}

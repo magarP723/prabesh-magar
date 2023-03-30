@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>TEJ Application Project</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>TEJ Application Project</h1>
+        <hr>
+            <div class="menu-item">
+                <div class="price">
+                    <h2>Samosa</h2> 
+                    <label>Price:</label><input type="number" class="samosaPrice" value="0" /> 
+                </div>
+                <div class="quantity">
+                    <label>Quantity:</label>
+                    <input type="button" value="+" onclick="increment('samosa')"/>
+                    <span id="count-samosa">0</span>
+                    <input type="button" value="-" onclick="decrement('samosa')"/>
+                </div>
+                <div><b>Total:</b> <span class="samosa-total">0</span></div>
+            </div>
+            <hr>
+            <div class="menu-item">
+                <div class="price">
+                    <h2>Tea</h2> 
+                    <label>Price:</label><input type="number" class="teaPrice" value="0" /> 
+                </div>
+                <div class="quantity">
+                    <label>Quantity:</label>
+                    <input type="button" value="+" onclick="increment('tea')"/>
+                    <span id="count-tea">0</span>
+                    <input type="button" value="-" onclick="decrement('tea')"/><br>
+                </div>
+                <div><b>Total:</b> <span class="tea-total">0</span></div>
+            </div>
+            <hr>
+            <div class="calculation">
+                <ul>
+                    <li><b>Total price:</b><span class="total_price">0</span></li>
+                    <li>Vat (13%):<span class="count_vat">0</span></li>
+                    <li>Tip (10%):<span class="count_tip">0</span></li>
+                </ul>
+            </div>
+            <hr>
+            <div class="total">
+            <label><b>Grand total:</b><span class="grand_total">0</span></label>
+            <input type="button" value="Calculate grand total" onclick="show()">
+            </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+</html>
