@@ -50,7 +50,7 @@ input[type="button"]{
 
 @media(max-width:1024px){
     .wrapper{
-        width: 70%;
+        width: 90%;
         border-radius: 10px;
 
     }
