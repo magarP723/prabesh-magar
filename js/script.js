@@ -14,11 +14,12 @@ function increment(item) {
 }
 
 function decrement(item) {
-  if (countT > 0 || countS > 0) {
+  if (countT > 0) {
     if (item === "tea") {
       countT -= 1;
       document.getElementById("count-tea").innerText = countT;
-    } else {
+    }
+    if(countS > 0){
       countS -= 1;
       document.getElementById("count-samosa").innerText = countS;
     }
